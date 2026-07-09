@@ -1,5 +1,6 @@
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
+from datetime import datetime
 import os
 
 load_dotenv()
@@ -17,3 +18,5 @@ def calculator_tool(query):
         return str(eval(query))
     except:
         return "Invalid math expression"
+def time_tool():
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
