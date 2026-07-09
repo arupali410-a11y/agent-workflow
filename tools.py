@@ -12,3 +12,8 @@ llm = ChatGroq(
 def chat_tool(prompt):
     response = llm.invoke(prompt)
     return response.content
+def calculator_tool(query):
+    try:
+        return str(eval(query))
+    except:
+        return "Invalid math expression"

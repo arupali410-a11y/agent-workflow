@@ -1,18 +1,10 @@
-from tools import chat_tool
+from tools import calculator_tool, chat_tool
 
 def agent(query):
 
-    prompt = f"""
-You are an AI assistant.
+    # If the query contains only numbers and math operators
+    if all(char in "0123456789+-*/(). " for char in query):
+        return calculator_tool(query)
 
-Your job is to answer the user's question clearly.
-
-Question:
-{query}
-
-Answer:
-"""
-
-    answer = chat_tool(prompt)
-
-    return answer
+    # Otherwise use the AI
+    return chat_tool(query)
