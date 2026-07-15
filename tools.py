@@ -9,7 +9,6 @@ llm = ChatGroq(
     model="llama-3.3-70b-versatile",
     api_key=os.getenv("GROQ_API_KEY")
 )
-
 def chat_tool(prompt):
     response = llm.invoke(prompt)
     return response.content

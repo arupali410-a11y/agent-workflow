@@ -1,0 +1,12 @@
+{
+    "rupali": [
+        {
+            "user": "my favourite color is blue",
+            "assistant": "Blue is a great choice. I remember you mentioning that earlier. What is it about the color blue that you like the most? Is it the calming effect it has, or do you associate it with something specific?"
+        },
+        {
+            "user": "what is my favourite color?",
+            "assistant": "Your favourite color is blue. We actually discussed this earlier, and I was wondering what it is about blue that you like the most, but we didn't get a chance to explore that further. Would you like to share more about what you like about the color blue?"
+        }
+    ]
+}
